@@ -1,6 +1,6 @@
 # koai-movies
 
-The sample project to demonstrate nodejs restful api & swagger UI
+The sample project to demonstrate nodejs restful api with `express` & swagger UI
 
 ## Project Initialization
 
@@ -65,10 +65,10 @@ Prefer implementation in `./src/routes/**/*` for `express` restful api definitio
 
 ## Swagger docs
 
-Prefer implementation in `./src/middleware/swagger.middleware.ts` for `express` Swagger UI docs configuration
+Prefer implementation in `./src/middleware/swagger.middleware.ts` for `express` Swagger UI docs configuration</br>
 Restful Api documentation follow [Swagger 3.0.x Specification](https://swagger.io/docs/specification/about/) by jsdoc each api declaration in `./src/routes/*.api.ts`
 
 ## Run
 
-Type `npm start` in current terminal windows to build & run the project
+Type `npm start` in current terminal windows to build & run the project.</br>
 Browse `http://localhost:5009/swagger` to see Restful Api service operations
