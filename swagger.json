@@ -1,0 +1,22 @@
+{
+    "definition": {
+        "openapi": "3.0.0",
+        "info": {
+            "title": "Koai Movies APIs v1",
+            "version": "0.1.0",
+            "description": "This is a simple CRUD API application made with Express and documented with Swagger",
+            "license": {
+                "name": "MIT",
+                "url": "https://spdx.org/licenses/MIT.html"
+            },
+            "contact": {
+                "name": "Koai",
+                "url": "https://koai.com",
+                "email": "koai@gemail.com"
+            }
+        },
+        "host": "http:localhost:5009",
+        "basePath": "/"
+    },
+    "apis": ["./routes/Movie.api.ts"]
+}
