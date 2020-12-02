@@ -8,8 +8,11 @@ export const connect = async () => {
         synchronize: false,
         logging: true,
         migrationsTableName: 'custom_migration_table',
-        entities: [__dirname + '/models/*.js'],
-        migrations: [__dirname + '/migrations/*.js'],
+        entities: [__dirname + '/models/*.js', __dirname + '/models/*.ts'],
+        migrations: [
+            __dirname + '/migrations/*.js',
+            __dirname + '/migrations/*.ts',
+        ],
         cli: {
             entitiesDir: __dirname + '/models/',
             migrationsDir: __dirname + '/migrations/',

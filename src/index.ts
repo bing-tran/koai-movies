@@ -1,7 +1,12 @@
 import { app } from './app';
 import { AddressInfo } from 'net';
+import logger from './core/logger';
+import secrets from './core/secrets';
 
-const server = app.listen(5009, '0.0.0.0', () => {
+const envPort = secrets.PORT;
+const envHost = secrets.HOST;
+
+const server = app.listen(envPort, envHost, () => {
     const { port, address } = server.address() as AddressInfo;
-    console.log('Server listening at: ', `http://${address}:${port}`);
+    logger.info(`Server listening at: http://${address}:${port}`);
 });

@@ -1,5 +1,4 @@
 import express from 'express';
-import * as bodyParser from 'body-parser';
 import { connect } from './db/db';
 import * as middleware from './middleware';
 import * as routes from './routes';
